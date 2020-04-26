@@ -34,7 +34,9 @@ class GradientAppBar extends StatefulWidget implements PreferredSizeWidget {
         assert(toolbarOpacity != null),
         assert(bottomOpacity != null),
         preferredSize = Size.fromHeight(
-            kToolbarHeight + (bottom?.preferredSize?.height ?? 0.0)),
+            // 这里是固定值 56点几  为方便定死值            
+            // kToolbarHeight + (bottom?.preferredSize?.height ?? 0.0)),
+            42 + (bottom?.preferredSize?.height ?? 0.0)),
         super(key: key);
 
   final Widget leading;
